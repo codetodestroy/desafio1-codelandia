@@ -44,6 +44,7 @@ body {
 .header {
     background-image: var(--linear);
     width: 100%;
+    min-height: 200px;
     margin-bottom: 25px;
 }
 
@@ -126,9 +127,8 @@ input::placeholder {
 
 .date::after {
     font-family: "Icons";
-    font-size: 20px;
-    content: "\E803";
     font-size: 19.25px;
+    content: "\E803";
     position: absolute;
     right: 0px;
     top: 0px;
@@ -137,7 +137,7 @@ input::placeholder {
 
 .date:hover::after {
     font-family: "Icons";
-    font-size: 20px;
+    font-size: 19.25px;
     content: "\E800";
     color: var(--heart);
 }
@@ -156,4 +156,64 @@ p {
     font-size: 14px;
     line-height: 26px;
     color: var(--text);
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        min-height: 250px;
+        margin-bottom: 75px;
+    }
+
+    .titles {
+        margin-top: 41px;
+    }
+
+    .titles h1, .titles span {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .search::before {
+        font-size: 23.44px;
+        padding: 18px 20px;
+    }
+
+    .search {
+        height: 65px;
+        margin: 73px 0 41px;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        line-height: 21.78px;
+    }
+
+    .news {
+        padding: 23px 24px;
+        margin: 25px 0;
+    }
+
+    .date {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .date::after {
+        font-size: 21.88px;
+    }
+
+    .date:hover::after {
+        font-size: 21.88px;
+    }
+
+    h3 {
+        font-size: 26px;
+        line-height: 32.5px;
+        margin: 22px 0 8px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
 }
